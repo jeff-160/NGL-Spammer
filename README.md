@@ -1,5 +1,6 @@
 ### Python Dependencies  
 1. PyAutoGUI
+---
   
 ### Run Instructions  
 1. Create a new Tampermonkey userscript
