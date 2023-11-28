@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  omg shokam
-// @author       You
+// @author       WAP Industries
 // @match        https://ngl.link/junenlom
 // @grant        none
 // ==/UserScript==
