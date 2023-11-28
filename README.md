@@ -1,3 +1,6 @@
+### Python Dependencies  
+1. PyAutoGUI
+  
 ### Run Instructions  
 1. Create a new Tampermonkey userscript
 2. Copy paste the contents of `omg shokam.js` into the userscript
