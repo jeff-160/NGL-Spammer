@@ -1,5 +1,5 @@
 ### Requirements  
-1. Chrome
+1. Chrome as default browser
 2. Tampermonkey chrome extension
 3. PyAutoGUI module
 ---
