@@ -1,5 +1,7 @@
-### Python Dependencies  
-1. PyAutoGUI
+### Requirements  
+1. Chrome
+2. Tampermonkey chrome extension
+3. PyAutoGUI module
 ---
   
 ### Run Instructions  
