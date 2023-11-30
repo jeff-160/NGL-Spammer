@@ -13,7 +13,7 @@
 ---
 
 ### Utilities  
-`update.py` serves to provide easy code updating when shokam changes his NGL link  
+`update.py` serves to provide easy code updating when Shokam changes his NGL link  
   
 To update the NGL link in all files:
 1. `cd` to the project directory and run `python -b update.py`
