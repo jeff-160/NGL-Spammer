@@ -18,3 +18,5 @@
 To update the NGL link in all files:
 1. `cd` to the project directory and run `python -b update.py`
 2. You will be prompted for the new NGL link
+3. After entering the new link, all instances of the old link will be replaced in all files
+4. Update the Tampermonkey userscript with the new code in `omg shokam.js`
