@@ -6,7 +6,6 @@ dir = os.path.dirname(os.path.abspath(__file__))
 def main():
     link = input("Enter Shokam's new NGL link: ")
     for path in [f"{dir}\\{i}" for i in os.listdir(dir) if os.path.basename(__file__) not in i]:
-        content = None
         with open(path) as f: 
             content = f.read()
         with open(path, "w") as f: 
