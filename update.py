@@ -3,7 +3,7 @@ import os
 
 def main():
     link = input("Enter Shokam's new NGL link: ")
-    for path in [f"{os.path.dirname(os.path.abspath(__file__))}\\{i}" for i in ["omg shokam.js", "omg shokam.py", ".env"]]:
+    for path in [os.path.abspath(i) for i in os.listdir(os.path.dirname(os.path.abspath(__file__))) if os.path.basename(__file__) not in i]:
         content = None
         with open(path) as f: 
             content = f.read()
