@@ -9,7 +9,7 @@
 3. Copy paste the contents of `tampermonkey.js` into the userscript
 4. Enable Tampermonkey and run the userscript
 5. Open `index.html` in Chrome
-6. You will be prompted for the number of messages you want to send
+6. You will be prompted for the number of messages to send
 ---
 
 ### Utilities  
