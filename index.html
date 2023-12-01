@@ -3,12 +3,13 @@
 
 <script>
     const Delay = (interval)=> new Promise(resolve=>setTimeout(resolve, interval))
+    const RandInt = (min, max)=> ~~(Math.random()*(max-min+1))+min
     
     let Count, BatchSize = 5
     const Windows = []
 
     window.onload = async ()=>{
-        while (!Count || Count.toString()==NaN.toString())
+        while (!Count || Count.toString()==NaN.toString() || Count<0)
             Count = +prompt("Number of messages")
 
         for (const i in [...Array(Count<BatchSize ? Count:BatchSize)])
@@ -28,7 +29,7 @@
                 Windows[i].location.href = "https://ngl.link/junenlom2/3words"
             Count-=Batch
 
-            await Delay(4000)
+            await Delay(RandInt(4, 7))
         }
 
         Windows.forEach(i=>i.close())
