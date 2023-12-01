@@ -25,14 +25,17 @@
             BatchNum++
             let Batch = (Count>=BatchSize ? BatchSize:Count)
             console.log(`Sending batch ${BatchNum} with ${Batch} messages`)
-            for (const i in [...Array(Batch)])
-                Windows[i].location.href = "https://ngl.link/junenlom2/3words"
+            for (const i in [...Array(Batch)]){
+                if (Windows[i].closed) Windows[i] = window.open()
+                Windows[i].location.replace("https://ngl.link/junenlom2/3words")
+            }
             Count-=Batch
 
             await Delay(RandInt(4, 7)*1000)
         }
 
         Windows.forEach(i=>i.close())
+        Windows.splice(0, Windows.length)
     }
 
 </script>
