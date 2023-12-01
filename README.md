@@ -1,7 +1,7 @@
 ### Requirements  
 1. Chrome as default browser
 2. [Tampermonkey](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) chrome extension
-3. Dotenv module (if you want to use update.py)
+3. [Dotenv](https://pypi.org/project/python-dotenv/) module (if you want to use update.py)
    - `pip install python-dotenv` 
 ---
   
