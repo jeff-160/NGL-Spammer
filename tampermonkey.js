@@ -12,7 +12,6 @@
 (function() {
     'use strict';
 
-    const Delay = (interval)=> new Promise(resolve=>setTimeout(resolve, interval))
     window.alert = ()=>{}
 
     setTimeout(async()=>{
