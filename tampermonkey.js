@@ -14,7 +14,7 @@
 
     window.alert = ()=>{}
 
-    setTimeout(async()=>{
+    setTimeout(()=>{
         document.querySelector(".dice-button")?.click()
         document.querySelector(".submit")?.click()
     }, 1000)
