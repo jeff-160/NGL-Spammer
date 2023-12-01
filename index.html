@@ -1,0 +1,34 @@
+<script>
+    const Delay = (interval)=> new Promise(resolve=>setTimeout(resolve, interval))
+    
+    let Count, BatchSize = 5
+    const Windows = []
+
+    window.onload = async ()=>{
+        while (!Count || Count.toString()==NaN.toString())
+            Count = +prompt("Number of messages")
+
+        for (const i in [...Array(Count<BatchSize ? Count:BatchSize)])
+            Windows.push(window.open())
+
+        Main()
+    }
+
+    async function Main(){
+        let BatchNum = 0
+
+        while (Count>0){
+            BatchNum++
+            let Batch = (Count>=BatchSize ? BatchSize:Count)
+            console.log(`Sending batch ${BatchNum} with ${Batch} messages`)
+            for (const i in [...Array(Batch)])
+                Windows[i].location.href = "https://ngl.link/junenlom2/3words"
+            Count-=Batch
+
+            await Delay(4000)
+        }
+
+        Windows.forEach(i=>i.close())
+    }
+
+</script>
