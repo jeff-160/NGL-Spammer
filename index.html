@@ -4,6 +4,7 @@
 <script>
     const Delay = (interval)=> new Promise(resolve=>setTimeout(resolve, interval))
     const RandInt = (min, max)=> ~~(Math.random()*(max-min+1))+min
+    const OpenWindow = ()=> window.open('', '_blank')
     
     let Count, BatchSize = 5
     const Windows = []
@@ -13,7 +14,7 @@
             Count = +prompt("Number of messages")
 
         for (const i in [...Array(Count<BatchSize ? Count:BatchSize)])
-            Windows.push(window.open())
+            Windows.push(OpenWindow())
 
         Main()
     }
@@ -25,9 +26,13 @@
             BatchNum++
             let Batch = (Count>=BatchSize ? BatchSize:Count)
             console.log(`Sending batch ${BatchNum} with ${Batch} messages`)
+
             for (const i in [...Array(Batch)]){
-                if (Windows[i].closed) Windows[i] = window.open()
-                Windows[i].location.replace("https://ngl.link/junenlom2/3words")
+                if (Windows[i].closed) {
+                    Windows[i].close()
+                    Windows[i] = OpenWindow()
+                }
+                Windows[i].location = "https://ngl.link/junenlom2/3words"
             }
             Count-=Batch
 
