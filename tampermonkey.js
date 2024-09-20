@@ -1,11 +1,10 @@
 // ==UserScript==
-// @name         omg shokam
+// @name         NGL Spammer
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @icon         https://isphs.hci.edu.sg/data/photos/%7B21FFCAF7-04B4-4266-931D-17A5C82EEB8E%7D.jpg
-// @description  omg shokam
-// @author       WAP Industries
-// @match        https://ngl.link/junenlom2/3words
+// @description  NGL Spammer 
+// @author       jeff160
+// @match        your_link_here
 // @grant        none
 // ==/UserScript==
 
